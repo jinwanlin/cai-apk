@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_width="40.0dip"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+    
+    
+    
+<ListView
+    android:id="@+id/productItem"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"/> 
+
+   
+        <LinearLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="#CDBA96" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="#000000"
+                android:textSize="20.0dip" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="订单"
+                android:textColor="#000000"
+                android:textSize="20.0dip" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="账单"
+                android:textColor="#000000"
+                android:textSize="20.0dip" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="#000000"
+                android:textSize="20.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/point_line" />
+    </LinearLayout>
+    
+</RelativeLayout>
